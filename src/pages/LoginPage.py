@@ -1,6 +1,6 @@
 from src.pages.BasePage import BasePage
 from selenium.webdriver.common.by import By
-
+import json
 
 class LoginPage(BasePage):
 
@@ -8,20 +8,16 @@ class LoginPage(BasePage):
     password = (By.XPATH, "//input[@id='password']")
     login_button = (By.XPATH, "//input[@id='login-button']")
 
-    login_data= "login.json"
 
+    #login_data= "login.json"
 
-
-    def navigate_to_login_page(self):
-        get_url = self.get_data(self.login_data)
-        url_value = get_url["url"]
-        self.navigate_to(url_value)  # Usa el parámetro URL
+    def login_data(self):
+        return self.get_data("login.json")
 
     def enter_username(self):
         get_username = self.get_data(self.login_data)
         username_value = get_username["username"]
         self.input_text(self.username, username_value)
-
 
     def enter_password(self):
         get_password = self.get_data(self.login_data)
@@ -29,4 +25,4 @@ class LoginPage(BasePage):
         self.input_text(self.password, password_value)
 
     def click_login_button(self):
-        self.click_element(self.login_button)
+        self.driver.find_element(*self.login_button).click()
