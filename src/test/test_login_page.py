@@ -1,25 +1,35 @@
 import pytest
 from src.pages.BasePage import BasePage
 from src.pages.LoginPage import LoginPage
+from selenium.webdriver.common.by import By
+import time
 
 
-class TestLoginPage:
+class TestLogin:
 
-    def test_login_with_valid_credentials(self, login_fixture):
-        login_fixture.navigate_to(login_fixture.url)
-        login_fixture.enter_username()
-        login_fixture.enter_password()
-        login_fixture.click_login_button()
-        assert "dashboard" in login_fixture.driver.current_url
+    def test_login_exitoso(self):
 
-    #def test_login_exitoso(self,driver):
-        #login_page = LoginPage(self.driver)
-        #login_page.navigate_to_login_page()
-        #login_page.enter_username()
-        #login_page.enter_password()
-        #login_page.click_login_button()
+        driver = BasePage.initialize_ChromeDriver()
+        login_page = LoginPage(driver)
+        login_page.open_url()
+        login_page.enter_username()
+        login_page.enter_password()
 
+        texto_inicial = login_page.get_text(login_page.titulo_inicio)
 
+        assert "Swag Labs" in texto_inicial
+        time.sleep(3)
+        login_page.click_login_button()
+
+        driver.quit()
+
+#def detest_login(self):
+        # Abrir URL desde JSON
+
+        #self.login_page_con_json.login_json()
+        # Verificar que el login fue exitoso
+        #products_text = self.login_page_con_json.get_text(self.login_page_con_json.locator_products)
+        #assert "asd" in products_text, f"Se esperaba 'Products' en el texto, pero se obtuvo: {products_text}"
 
 
 

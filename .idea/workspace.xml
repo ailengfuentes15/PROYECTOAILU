@@ -8,10 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fe91996-4378-47c0-8a89-1f113f4fdeb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PROYECTOAILU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PROYECTOAILU.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test_login_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.pytest for test_login_page.TestLogin.test_login_exitoso.executor": "Run",
     "Python tests.pytest for test_login_page.TestLoginPage.executor": "Run",
     "Python tests.pytest for test_login_page.TestLoginPage.test_login_exitoso.executor": "Run",
     "Python tests.pytest for test_login_page.TestLoginPage.test_login_page.executor": "Run",
@@ -59,7 +60,7 @@
       <recent name="C:\Users\afuentes\Desktop\PROYECTOAILU\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_login_page.TestLoginPage.test_login_with_valid_credentials">
+  <component name="RunManager" selected="Python tests.pytest for test_login_page.TestLogin.test_login_exitoso">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PROYECTOAILU" />
       <option name="ENV_FILES" value="" />
@@ -150,10 +151,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_login_page.TestLogin.test_login_exitoso" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PROYECTOAILU" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_page.TestLogin.test_login_exitoso&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_login_page.TestLoginPage.test_login_with_valid_credentials" />
+        <item itemvalue="Python tests.pytest for test_login_page.TestLogin.test_login_exitoso" />
         <item itemvalue="Python tests.pytest for test_login_page.TestLoginPage.test_login_exitoso" />
+        <item itemvalue="Python tests.pytest for test_login_page.TestLoginPage.test_login_with_valid_credentials" />
         <item itemvalue="Python tests.pytest for test_login_page.TestLoginPage" />
         <item itemvalue="Python tests.pytest for test_login_page.TestLoginPage.test_login_page" />
       </list>

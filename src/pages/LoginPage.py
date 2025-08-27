@@ -7,12 +7,14 @@ class LoginPage(BasePage):
     username = (By.XPATH, "//input[@id='user-name']")
     password = (By.XPATH, "//input[@id='password']")
     login_button = (By.XPATH, "//input[@id='login-button']")
+    titulo_inicio = (By.XPATH, "//div[@class='login_logo']")
 
+    login_data= "login.json"
 
-    #login_data= "login.json"
-
-    def login_data(self):
-        return self.get_data("login.json")
+    def open_url(self):
+        get_url = self.get_data(self.login_data) #LEE EL ARCHIVO JSON
+        url_value = get_url["url"] #DECLARO UNA VARIABLE "VALUE"PARA DECIRLE, DEL JSON QUIERO QUE BUSQUES LA "URL"----> DE DONDE? DE LA VARIABLEGET URL CREADA ANTERIORMENTE
+        self.navigate_to(url_value)
 
     def enter_username(self):
         get_username = self.get_data(self.login_data)
